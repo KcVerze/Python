@@ -35,3 +35,7 @@ elif score >= 70:
 else:
     print("Grade: F")
 
+#example
+
+name =input("what's your name ?")
+print("My name is" + " " + name + "!")
