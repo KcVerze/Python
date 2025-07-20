@@ -39,3 +39,12 @@ else:
 
 name =input("what's your name ?")
 print("My name is" + " " + name + "!")
+
+# band name generator
+
+print("Welcome to the band name generator.")
+
+city = input("What's the name of the city you grew up in? ")
+
+pet_name = input("What's your pet name? ")
+print("your band name could be : "+city+" "+pet_name)
