@@ -60,3 +60,10 @@ final_bill = (bill+(bill*(tip/100)))/people
 bill_roundup = (round(final_bill,2))
 print(f"${bill_roundup}")
 
+# odd or even
+
+num = int(input("pick a number"))
+if num % 2 == 0:
+    print("even number")
+else:
+    print("odd number")
