@@ -143,3 +143,5 @@ if decision1 == "left":
 else:
     print("Fall into a hole Game Over.")
 
+
+
