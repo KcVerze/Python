@@ -145,3 +145,74 @@ else:
 
 
 
+# head or tails
+import random
+
+
+num = random.random()
+
+print(num)
+
+num_round = round(num)
+
+print(num_round)
+
+if num_round == 0:
+    print("heads")
+else:
+    print("tails")
+
+
+
+
+# rock paper scissors
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+sel1 =int(input("rock = 0 , paper = 1, scissors = 2 , pick : "))
+options = [rock,paper,scissors]
+print(options[sel1])
+
+print("computer chose:")
+sel2 = random.randint(0,2)
+print(options[sel2])
+
+# win , lose ,draw
+
+if sel1 >= 3 or sel1 < 0:
+    print("You typed an invalid number. You lose!")
+elif sel1 == 0 and sel2 == 2:
+    print("You win!")
+elif sel2 == 0 and sel1 == 2:
+    print("You lose!")
+elif sel2 > sel1:
+    print("You lose!")
+elif sel1 > sel2:
+    print("You win!")
+elif sel2 == sel1:
+    print("It's a draw!")
