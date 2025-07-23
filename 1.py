@@ -308,3 +308,14 @@ for char in password_list:
 print(f"Your password is: {password}")
 
 
+
+
+
+# function
+def my_function():
+    print("hello")
+    print("bye")
+    
+
+
+my_function()
