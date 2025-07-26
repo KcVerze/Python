@@ -319,3 +319,42 @@ def my_function():
 
 
 my_function()
+
+
+# hang man try -1
+
+import random
+word_list = ["aardvark", "baboon", "camel"]
+
+guessed_word = random.choice(word_list)
+
+word_count = len(guessed_word)
+lives = 6
+
+def game_load():
+    global lives
+    print(f"Word to guess: {"_"* word_count}")
+    word = input("Guess a Letter: ").lower()
+
+    if word not in guessed_word:
+        lives -= 1
+        print(f"{lives}/6 Lives left")
+    else:
+        print("good guess")
+
+    if lives>0:
+        game_load()
+    else:
+        print("game over")
+
+
+
+
+
+
+# TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
+
+# TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+
+# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Print "Right" if it
+#  is, "Wrong" if it's not.
