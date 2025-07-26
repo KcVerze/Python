@@ -652,3 +652,45 @@ def life_in_weeks(age):
     
 
 life_in_weeks(56)
+
+
+# name
+def greet_with_name(name):
+    print(f"Hello {name}")
+    print(f"How do you do {name}?")
+
+
+greet_with_name("Angela")
+
+
+# love count :
+
+def calculate_love_score(name1, name2):
+    # Combine and convert both names to lowercase
+    name_pool = (name1 + name2).lower()
+
+    # Count letters in "TRUE"
+    true_count = 0
+    for char in "true":
+        count = name_pool.count(char)
+        true_count += count
+        print(f"{char.upper()} occurs {count} times")
+
+    print(f"Total = {true_count}")
+
+    # Count letters in "LOVE"
+    love_count = 0
+    for char in "love":
+        count = name_pool.count(char)
+        love_count += count
+        print(f"{char.upper()} occurs {count} times")
+
+    print(f"Total = {love_count}")
+
+    # Combine the counts into a 2-digit number
+    love_score = int(str(true_count) + str(love_count))
+    print(f"\nLove Score = {love_score}")
+    
+
+# Test the function
+calculate_love_score("Kanye West", "Kim Kardashian")
