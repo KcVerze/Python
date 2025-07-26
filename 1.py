@@ -635,4 +635,9 @@ while not game_over:
 
 
 
+# functions with inputs
+def greet():
+    print("hey")
+    print("hello")
 
+greet()
